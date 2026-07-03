@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kickspa — Tus tenis, como nuevos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <img src="logo.png" alt="Logo Kickspa">
+      Kickspa
+    </a>
+    <nav class="links">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#servicios">Servicios y precios</a>
+      <a href="#agendar">Agendar</a>
+    </nav>
+    <a class="btn btn-solid btn-nav" href="#agendar">Agenda tu recogida</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Limpieza de tenis a domicilio y por encargo</span>
+        <h1>Tus tenis, <em>como nuevos</em>, sin arriesgarlos en la lavadora.</h1>
+        <p class="lead">Recogemos tus sneakers en la puerta de tu casa, los limpiamos a mano según su material —cuero, malla, gamuza o suela— y te los devolvemos impecables en 24 a 48 horas.</p>
+        <div class="hero-ctas">
+          <a href="#agendar" class="btn btn-solid">Agenda tu recogida</a>
+          <a href="#servicios" class="btn btn-outline">Ver servicios y precios</a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">Recogida en 24–48h</span>
+          <span class="tag">Técnica según material</span>
+          <span class="tag">Riohacha y alrededores</span>
+        </div>
+      </div>
+
+      <div class="slider-card">
+        <div class="slider-label"><span>Antes</span><span>Arrastra para comparar</span><span>Después</span></div>
+        <div class="compare" id="compareBox">
+          <span class="compare-tag left">Antes</span>
+          <span class="compare-tag right">Después</span>
+
+          <!-- Capa de fondo: tenis SUCIOS (antes) -->
+          <div class="dirty-layer">
+            <img src="antes.jpg" alt="Tenis sucios antes de la limpieza Kickspa">
+          </div>
+
+          <!-- Capa recortada: tenis LIMPIOS (después), se revela al arrastrar -->
+          <div class="clean-layer">
+            <img src="despues.jpg" alt="Tenis limpios después de la limpieza Kickspa">
+          </div>
+
+          <div class="drag-handle" id="dragHandle">
+            <div class="line"></div>
+            <div class="knob">↔</div>
+          </div>
+          <input type="range" min="0" max="100" value="50" id="compareRange" aria-label="Comparar antes y después">
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">
+      <svg viewBox="0 0 220 40" fill="none">
+        <path d="M4 34 C4 20 16 20 16 34" stroke="#000" stroke-width="2" fill="none"/>
+        <path d="M40 34 C40 14 56 14 56 34" stroke="#F58723" stroke-width="2" fill="none"/>
+        <path d="M84 34 C84 8 106 8 106 34" stroke="#000" stroke-width="2" fill="none"/>
+        <path d="M134 34 C134 14 150 14 150 34" stroke="#F58723" stroke-width="2" fill="none"/>
+        <path d="M170 34 C170 20 182 20 182 34" stroke="#000" stroke-width="2" fill="none"/>
+        <circle cx="200" cy="30" r="2.5" fill="#000"/>
+        <circle cx="212" cy="18" r="1.6" fill="#F58723"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">El proceso</span>
+        <h2>Tres pasos, cero riesgo para tus tenis</h2>
+        <p>Nada de lavadora ni químicos genéricos: cada par pasa por una limpieza pensada para su propio material.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-connector"></span>
+          <span class="step-num">01</span>
+          <h3>Recogemos</h3>
+          <p>Agendas por WhatsApp o el formulario y pasamos por tus tenis en la dirección que nos indiques, o los traes tú si prefieres.</p>
+        </div>
+        <div class="step">
+          <span class="step-connector"></span>
+          <span class="step-num">02</span>
+          <h3>Limpiamos</h3>
+          <p>Identificamos el material —cuero, malla, gamuza o suela— y aplicamos la técnica y los productos adecuados para cada uno.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Entregamos</h3>
+          <p>En 24 a 48 horas tus tenis vuelven a tu puerta, listos para la calle otra vez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPRA Y SERVICIOS -->
+  <section id="servicios" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Servicios y precios</span>
+        <h2>Un tratamiento para cada material</h2>
+        <p>Precios de referencia por par. Si tu caso es distinto (manchas difíciles o piezas de colección), cotizamos por WhatsApp sin costo.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- SERVICIO 1 -->
+        <div class="service-card">
+          <span class="badge-pop">Más pedido</span>
+          <div class="service-img-wrap">
+            <img src="compra.jpg" alt="Tenis rosados listos para la venta Kickspa">
+          </div>
+          <div class="service-content">
+            <h3>Esencial · Malla y tela</h3>
+            <p class="desc">Limpieza profunda de tejidos porosos, cordones y plantillas. Ideal para uso diario y running.</p>
+            <div class="price-tag"><span class="amount">$35.000</span><span class="unit">COP / par</span></div>
+          </div>
+        </div>
+
+        <!-- SERVICIO 2 -->
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=600&q=80" alt="Zapatillas de cuero de alta calidad">
+          </div>
+          <div class="service-content">
+            <h3>Premium · Cuero y gamuza</h3>
+            <p class="desc">Hidratación y limpieza especializada que protege el material premium y devuelve la textura original.</p>
+            <div class="price-tag"><span class="amount">$50.000</span><span class="unit">COP / par</span></div>
+          </div>
+        </div>
+
+        <!-- SERVICIO 3 -->
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80" alt="Detalle de suela blanca de zapatilla">
+          </div>
+          <div class="service-content">
+            <h3>Blanqueado de suela</h3>
+            <p class="desc">Recupera el tono blanco original de la mediasuela mediante un tratamiento seguro para los pegamentos.</p>
+            <div class="price-tag"><span class="amount">$25.000</span><span class="unit">COP / par</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXTRAS Y ADICIONALES -->
+      <div class="extra-row">
+        <div class="extra-card">
+          <img class="extra-img" src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=150&q=80" alt="Kit limpiador de calzado">
+          <div class="extra-info">
+            <h4>Kit de mantenimiento</h4>
+            <p>Cepillo premium, limpiador ecológico y protector para espaciar tus lavadas.</p>
+          </div>
+          <span class="amount">$40.000</span>
+        </div>
+        <div class="extra-card">
+          <img class="extra-img" src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?auto=format&fit=crop&w=150&q=80" alt="Colección de sneakers en estantería">
+          <div class="extra-info">
+            <h4>Membresía coleccionista</h4>
+            <p>Hasta 4 pares al mes con recogida prioritaria y blanqueado de suelas incluido.</p>
+          </div>
+          <span class="amount">$150.000/mes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Por qué Kickspa</span>
+        <h2>El cuidado que tus tenis no reciben en casa</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <svg class="drop" viewBox="0 0 24 24" fill="none" stroke="#F58723" stroke-width="2"><path d="M12 2c4 6 7 10 7 14a7 7 0 11-14 0c0-4 3-8 7-14z"/></svg>
+          <h3>Sin dañar suela ni pegamento</h3>
+          <p>Nada de lavadora ni secadora: todo el proceso es manual y controlado.</p>
+        </div>
+        <div class="why-item">
+          <svg class="drop" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M12 2c4 6 7 10 7 14a7 7 0 11-14 0c0-4 3-8 7-14z"/></svg>
+          <h3>Técnica según el material</h3>
+          <p>Cuero, gamuza, malla y suela reciben productos y cepillos distintos, no un mismo trato genérico.</p>
+        </div>
+        <div class="why-item">
+          <svg class="drop" viewBox="0 0 24 24" fill="none" stroke="#F58723" stroke-width="2"><path d="M12 2c4 6 7 10 7 14a7 7 0 11-14 0c0-4 3-8 7-14z"/></svg>
+          <h3>Vamos hasta tu puerta</h3>
+          <p>Agendas por WhatsApp y recogemos tus tenis donde estés, sin filas ni desplazamientos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDAR -->
+  <section id="agendar" class="alt">
+    <div class="wrap">
+      <div class="book-shell">
+        <div class="book-info">
+          <span class="eyebrow">Agendar recogida</span>
+          <h2>Cuéntanos de tus tenis y coordinamos todo por WhatsApp</h2>
+          <p>Completa el formulario y te enviamos directo a WhatsApp con los datos listos para confirmar tu recogida.</p>
+          <ul>
+            <li>Confirmamos horario de recogida el mismo día.</li>
+            <li>Te avisamos apenas tus tenis estén listos.</li>
+            <li>Entrega en 24–48 horas según el servicio.</li>
+          </ul>
+        </div>
+        <form class="book-form" id="bookingForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" required placeholder="Tu nombre">
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" required placeholder="300 000 0000">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field full">
+              <label for="direccion">Dirección o punto de recogida</label>
+              <input type="text" id="direccion" required placeholder="Barrio, calle, referencia">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="servicio">Servicio</label>
+              <select id="servicio">
+                <option>Esencial · Malla y tela</option>
+                <option>Premium · Cuero y gamuza</option>
+                <option>Blanqueado de suela</option>
+                <option>No estoy seguro, quiero cotizar</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fecha">Fecha preferida</label>
+              <input type="date" id="fecha">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-solid">Enviar por WhatsApp</button>
+          <p class="form-note">Se abrirá WhatsApp con tu solicitud lista para enviar.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="logo.png" alt="Logo Kickspa">
+        <span>Kickspa</span>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Navegación</h5>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#servicios">Servicios y precios</a>
+          <a href="#agendar">Agendar</a>
+        </div>
+        <div class="foot-col">
+          <h5>Contacto</h5>
+          <a href="https://wa.me/573000000000" target="_blank" rel="noopener">WhatsApp</a>
+          <p>Riohacha, La Guajira</p>
+        </div>
+        <div class="foot-col">
+          <h5>Horario</h5>
+          <p>Lun – Sáb, 8am – 6pm</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Kickspa. Tus tenis, como nuevos.</span>
+      <span>Limpieza de tenis a domicilio y por encargo</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-fab" href="https://wa.me/573000000000" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9 3 3 9 3 16c0 2.5.7 4.8 1.9 6.8L3 29l6.4-1.8c1.9 1 4.1 1.6 6.6 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.6c-2.2 0-4.3-.6-6.1-1.7l-.4-.2-4 1.1 1.1-3.9-.3-.4C5.1 20 4.4 18 4.4 16c0-6.4 5.2-11.6 11.6-11.6S27.6 9.6 27.6 16 22.4 26.6 16 26.6zm6.3-8.7c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.6 5.8 5.1.8.3 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
